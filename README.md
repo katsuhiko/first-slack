@@ -1,6 +1,6 @@
 # First Slack
 
-A Serverless Module for the [Serverless Framework](http://www.serverless.com/) featuring a SlackBot sample application.
+A Serverless Module for the [Serverless Framework](http://www.serverless.com/) featuring a SlackBot simple application.
 
 # Set up
 
