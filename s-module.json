@@ -1,0 +1,14 @@
+{
+  "name": "first-slack",
+  "version": "0.0.1",
+  "profile": "aws-0",
+  "location": "https://github.com/katsuhiko/first-slack",
+  "author": "",
+  "description": "",
+  "custom": {},
+  "cloudFormation": {
+    "lambdaIamPolicyDocumentStatements": [],
+    "resources": {}
+  },
+  "runtime": "nodejs"
+}
