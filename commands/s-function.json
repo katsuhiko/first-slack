@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "commands": {
+      "custom": {
+        "excludePatterns": [],
+        "envVars": []
+      },
+      "handler": "modules/first-slack/commands/handler.handler",
+      "timeout": 6,
+      "memorySize": 1024,
+      "eventSourceArn": "",
+      "endpoints": [
+        {
+          "path": "first-slack/commands",
+          "method": "POST",
+          "authorizationType": "none",
+          "apiKeyRequired": false,
+          "requestParameters": {},
+          "requestTemplates": {
+            "application/x-www-form-urlencoded": "{\n  \"body\" : $input.json(\"$\")\n}"
+          },
+          "responses": {
+            "400": {
+              "statusCode": "400"
+            },
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {},
+              "responseModels": {},
+              "responseTemplates": {
+                "application/json": ""
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
